@@ -1,1 +1,10 @@
-<mat-icon>favorite</mat-icon>
+<header class="header">
+
+</header>
+
+<nav class="navbar">
+    <app-menu *ngIf="menuIsVisible"></app-menu>
+    <div class="container-btn-menu">
+        <mat-icon class="btn-menu" (click)="showMyMenu()">menu</mat-icon>
+    </div>
+</nav>

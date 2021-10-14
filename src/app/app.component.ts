@@ -10,14 +10,21 @@ import { DomSanitizer } from "@angular/platform-browser";
 export class AppComponent {
 
   title = 'Mon portfolio';
+  menuIsVisible : boolean = false;
 
   constructor(
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer
   ) {
+
     this.matIconRegistry.addSvgIcon(
       "usericon",
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/user.svg")
     );
   }
+
+  showMyMenu() {
+    this.menuIsVisible =! this.menuIsVisible;
+  }
+
 }
