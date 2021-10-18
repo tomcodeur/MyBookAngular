@@ -1,7 +1,7 @@
-<div class="container-menu">
+<div class="container-menu" *ngIf="menuIsHidden">
     <!-- <p>Mon menu</p> -->
     <div class="container-arrow" >
-        <mat-icon class="arrow-back">arrow_back</mat-icon>
+        <mat-icon class="arrow-back" (click)="hideMyMenu()">arrow_back</mat-icon>
     </div>
 </div>
 
