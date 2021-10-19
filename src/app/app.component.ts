@@ -25,8 +25,6 @@ export class AppComponent {
 
   showMyMenu() {
     this.menuIsVisible =! this.menuIsVisible;
-    let menu = document.querySelector('.container-menu') as HTMLElement;
-    menu.classList.add('.close-menu');
   }
 
 }

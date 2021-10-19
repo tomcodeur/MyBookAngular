@@ -15,10 +15,14 @@ export class MenuComponent implements OnInit {
   }
 
   hideMyMenu() {
-    this.menuIsHidden =! this.menuIsHidden;
-    let menu = document.querySelector('.container-menu') as HTMLElement;
-    menu.classList.add('.close-menu');
-    console.log(menu);
+    setTimeout(() => {
+      this.menuIsHidden =! this.menuIsHidden;
+    },1000)
+    setTimeout(() => {
+      let menu = document.querySelector('.container-menu') as HTMLElement;
+      menu.classList.add('close-menu');
+    },500);
   }
+
 
 }
